@@ -11,7 +11,7 @@ app.config(['$routeProvider',function($routeProvider){
     controller:''
   })
   .when('/book',{
-    templateUrl:'tpl/book.html',
+    templateUrl:'../tpl/book.html',
     controller:''
   })
   .otherwise({
