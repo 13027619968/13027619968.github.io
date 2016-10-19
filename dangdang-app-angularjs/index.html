@@ -21,10 +21,12 @@
 
 <body>
 
-    <div ng-app='app'>
-        <div class="page_bd">
-            <div ng-view>
-            </div>
+  <div ontouchstart class="container" ng-app='app'>
+      <div class="page__bd" style="height: 100%;">
+          <div class="weui-tab">
+              <div ng-view class="weui-tab__panel">
+
+              </div>
             <div class="weui_tabbar" ng-controller="mainController">
                 <a href="#/" ng-click="linkTo(0)" class="weui_tabbar_item {{selectedIndex==0? 'weui_bar_item_on':''}}">
                     <div class="weui_tabbar_icon">
@@ -53,7 +55,7 @@
             </div>
         </div>
     </div>
-
+</div>
     <script src="assets/lib/angular.min.js"></script>
     <script src="assets/lib/angular-route.min.js"></script>
     <script src="assets/app.js"></script>
