@@ -10,15 +10,44 @@
 <body>
 
   <div ng-app='app' ng-controller="mainController">
-    <div ng-view>
-
+    <div class="page_bd">
+      <div ng-view>
+        <div class="weui_tabbar" ng-controller="footerCtrl">
+        <a href="#/" ng-click="linkTo(0)" class="weui_tabbar_item {{selectedIndex==0? 'weui-bar__item_on':''}}">
+          <div class="weui_tabbar_icon">
+            <img src="../assets/images/icon_nav_button.png" alt="">
+          </div>
+          <p class="weui_tabbar_label">首页</p>
+        </a>
+        <a href="#/blog" ng-click="linkTo(1)" class="weui_tabbar_item {{selectedIndex==1? 'weui-bar__item_on':''}}">
+          <div class="weui_tabbar_icon">
+            <img src="../assets/images/icon_nav_msg.png" alt="">
+          </div>
+          <p class="weui_tabbar_label">我的blog</p>
+        </a>
+        <a href="#/dangdang" ng-click="linkTo(2)" class="weui_tabbar_item {{selectedIndex==2? 'weui-bar__item_on':''}}">
+          <div class="weui_tabbar_icon">
+            <img src="../assets/images/icon_nav_article.png" alt="">
+          </div>
+          <p class="weui_tabbar_label">当当热搜</p>
+        </a>
+        <a href="#/about_me" ng-click="linkTo(3)" class="weui_tabbar_item {{selectedIndex==3? 'weui-bar__item_on':''}}">
+          <div class="weui_tabbar_icon">
+            <img src="../assets/images/icon_nav_cell.png" alt="">
+          </div>
+          <p class="weui_tabbar_label">联系</p>
+        </a>
+      </div>
     </div>
+      </div>
+    </div>
+
   </div>
 
-  
+
   <script src="assets/lib/angular.js"></script>
   <script src="assets/lib/angular-route.js"></script>
-  <script src="assets/app.js"></script>
+  <script src="app.js"></script>
   <script src="assets/api/service.js"></script>
   <script src="assets/controllers/main_controller.js"></script>
 </body>
