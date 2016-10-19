@@ -14,7 +14,7 @@ app.config(['$routeProvider',function($routeProvider){
     templateUrl:'../tpl/book.html',
     controller:''
   })
-  .otherwise('/about_me',{
+  .otherwise(
     redirectTo('/');
   })
 
