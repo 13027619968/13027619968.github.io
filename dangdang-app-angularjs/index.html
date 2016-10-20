@@ -17,13 +17,12 @@
 
 <body>
 
-  <div ontouchstart class="container" ng-app='app' >
-      <div class="page__bd" style="height: 100%;">
-          <div class="weui-tab">
-              <div ng-view class="weui-tab__panel">
+  <divng-app='app' >
+      <div class="page__bd">
+              <div ng-view>
 
               </div>
-            <div class="weui_tabbar" ng-controller="bookController">
+            <div class="weui_tabbar footer-nav" ng-controller="mainController">
                 <a href="#/" ng-click="linkTo(0)" class="weui_tabbar_item {{selectedIndex==0? 'weui_bar_item_on':''}}">
                     <div class="weui_tabbar_icon">
                         <img src="assets/images/icon_nav_button.png" alt="">

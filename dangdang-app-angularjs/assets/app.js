@@ -12,10 +12,13 @@ app.config(['$routeProvider',function($routeProvider){
   })
   .when('/book',{
     templateUrl:'assets/tpl/book.html',
+    controller:'bookController'
+  })
+  .when('/about_me',{
+    templateUrl:'assets/tpl/about_me.html',
     controller:''
   })
   .otherwise({
-    templateUrl:'assets/tpl/about_me.html',
-    controller:''
+    redirectTo:'/'
   })
 }])
