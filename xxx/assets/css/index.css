@@ -1,0 +1,224 @@
+html,body{
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.3;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+    text-decoration: none;
+}
+#header{
+    font-size: 14px;
+    background-color: #f4f4f4;
+    height: 40px;
+}
+#header dl {
+    margin: 0 auto;
+    width: 1000px;
+    color: #999;
+}
+#header dl dt{
+    height: 100%;
+    line-height: 40px;
+    float: left;
+}
+#header dl dd{
+    float: right;
+    margin-left: 10px;
+    line-height: 40px;
+}
+a{
+    text-decoration: none;
+    list-style: none;
+}
+header #header dd a{
+    text-decoration: none;
+    list-style: none;
+    color: #999;
+}
+header #header dd a:hover{
+    color: #444;
+}
+header #header .firstDD a{
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+/* logo部分 */
+#logoHeader{
+    width: 1000px;
+    height: 144px;
+    margin: 0 auto;
+}
+#logoHeader h3{
+    float: left;
+    display: flex;
+    padding: 20px 0;
+    margin: 0;
+}
+#logoHeader h3 p{
+    margin-left: 60px;
+}
+#logoHeader h3 b{
+    display: block;
+    color: blue;
+    font-size: 24px;
+    line-height: 60px;
+    font-weight: bold;
+}
+#logoHeader h3 span{
+    font-weight: 400;
+    font-size: 18px;
+}
+#logoHeader h3 a img{
+    height: 100px;
+    transition: All 1s ease;
+}
+#logoHeader h3 a img:hover{
+    transform: scale(1.3);
+}
+#logoHeader h3>img{
+    height: 100px;
+    margin-left: 300px;
+}
+#logoHeader .phone{
+    float: right;
+    height: 50px;
+    padding: 40px 0;
+    margin-right: 30px;
+    line-height: 1.5;
+}
+#logoHeader .phone p{
+    font-size: 16px;
+    color: black;   
+    margin: 0;
+}
+#logoHeader .phone p img{
+    vertical-align: middle;
+}
+#logoHeader .phone p b{
+    color: blue;
+}
+/* 导航栏 */
+
+#nav{
+    background: url(../images/nav_bg.jpg);
+}
+#nav ul{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+#nav ul li{
+    width: calc(100%/6);
+    text-align: center;
+    border-right: dotted 1px #fff;
+}
+#nav ul li a{
+    color: #fff;
+    line-height: 48px;
+    font-family: "Microsoft YaHei","微软雅黑";
+}
+#nav ul li:hover{
+    background-color: dodgerblue;
+}
+
+#scroll{
+    margin: 0 auto;
+}
+#scroll img{
+    width: 100%;
+}
+/* 下面的三栏 */
+#other{
+    height: 350px;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
+    color: black;
+    /*display: flex;
+    justify-content: space-around;*/
+}
+#other div{
+    border: 1px solid #999;
+    padding: 10px;
+    height: 300px;
+}
+#other div p{
+    font-size: 18px;
+    color: blue;
+    font-weight: 600;
+}
+#other div p span{
+    float: right;
+}
+#other div dl img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+#other div li span{
+    float: right;
+}
+.news ul li{
+    background: url(../images/icon2.png) no-repeat left;
+    margin-top: 7px;
+    font-size: 16px;
+    padding: 0 0 0 15px;
+    /*border-bottom: dotted 1px #999;*/
+    -webkit-transition: All 0.5s ease ;
+    -moz-transition: All 0.5s ease ;
+    transition: All 0.5s ease ;
+}
+
+#other div li:hover{
+    transform: translate(10px,0);
+}
+#other div li span{
+    font-size: 14px;
+    color: #999;
+}
+.about{
+    float: left;
+    width: 260px;
+}
+.about dd{
+    line-height: 1.5;
+}
+.contact dd{
+    margin-bottom: 5px;
+}
+.news{
+    float: left;
+    width: 400px;
+    margin-left: 40px;
+}
+.contact{
+    float: right;
+    width: 260px;
+}
+.ftNav{
+    text-align: center;
+    background: #118adb;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    margin: 20px 0 0;
+}
+.ftNav a{
+    color: #fff;
+    font-weight: lighter;
+    padding: 0 20px;
+}
+.over{
+    text-align: center;
+}
+.over dd{
+    margin: 5px 0;
+}
